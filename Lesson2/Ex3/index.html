@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <custom-input value="123"></custom-input>
+    <button id="btn-123">aaa</button>
+    <script>
+        let btn = document.querySelector('#btn-123');
+        btn.onclick = () => {
+            document.querySelector('custom-input').value = "aaa";
+        }
+    </script>
+
+    <script src="./custom-input.js" type="module"></script>
+    <script src="./test.js" type="module"></script>
+</body>
+
+</html>
